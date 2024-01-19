@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Memory Games</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-image: url('homepg.jpg');
+      background-size: 100% 120%;
+    }
+
+    #header {
+      background-color: transparent;
+      padding: 10px;
+    }
+
+    #logo {
+      width: 150px;
+      height: 100px;
+      float: left;
+    }
+
+    #title {
+      margin: 0 auto;
+      font-size: 100px;
+      font-weight: bold;
+      color: rgb(28, 27, 29);
+      font-family:Arial, Helvetica, sans-serif;
+      background-color:#ffffff94;
+      max-width: 1050px;
+    }
+
+    #about-section {
+      margin: 20px auto;
+      max-width: 1000px;
+      padding: 20px;
+      background-color:#ffffff94;
+      border: 1px solid #171717;
+      border-radius: 5px;
+      color:rgb(19, 19, 19);
+      font-size: 25px;
+      
+    }
+
+    .flashcard-container {
+      display: flex;
+      justify-content: center;
+    }
+
+    .flashcard {
+      width: 300px;
+      height: 200px;
+      margin: 20px;
+      position: relative;
+      border: 3px solid #171616;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+
+    .flashcard:hover .play-button {
+      display: block;
+    }
+
+    .flashcard img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .play-button {
+      display: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .play-button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div id="header">
+    <img id="logo" src="logo1.jpeg" alt="Logo">
+    <h1 id="title">Memory Games</h1>
+  </div>
+
+  <div id="about-section">
+    <h2>About Us</h2>
+    <p>Here at Memory Games, we are passionate about exercising and enhancing memory skills. Our games are designed to challenge your memory and provide an entertaining experience. Whether you enjoy classic memory games, testing your logical thinking with Sudoku, or playing with words in Guess the Word, we have something for everyone.</p>
+  </div>
+
+  <div class="flashcard-container">
+    <div class="flashcard">
+      <img src="logo2.jpg" alt="Memory Game">
+      <button class="play-button" onclick="window.location.href = 'instruction1.html';">Play</button>
+    </div>
+  
+    <div class="flashcard">
+      <img src="logo3.jpg" alt="Sudoku">
+      <button class="play-button" onclick="window.location.href = 'instruction2.html';">Play</button>
+    </div>
+  
+    <div class="flashcard">
+      <img src="logo4.webp" alt="Guess the Word">
+      <button class="play-button" onclick="window.location.href = 'instruction3.html';">Play</button>
+    </div>
+  </div>
+</body>
+</html>

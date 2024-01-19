@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instructions</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Bedrock', Bedrock;
+            background-image: url('instruct.gif');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+        .container {
+            text-align: center;
+            max-width: 1000px;
+            padding: 20px;
+            border: 1px solid transparent;
+            border-radius: 5px;
+        }
+        h1 {
+            color: rgb(11, 11, 11);
+            font-size: 400%;
+            font-family: 'Bedrock', Bedrock;
+        }
+        p {
+            color: rgb(16, 15, 15);
+            font-size: 180%;
+        }
+        ul {
+            color: rgb(25, 23, 23); /* Set the color of the list elements to white */
+            list-style-type: none;
+            padding-left: 20px;
+            font-size: 30px;
+        }
+        ul li:before {
+            content: "\2022"; /* Use a bullet character */
+            color: rgb(255, 1, 1); /* Set the color of the bullets to light pink */
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+        .play-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 150%;
+            border: none;
+            border-radius: 5px;
+            background-color: #01c53c;
+            color: white;
+            cursor: pointer;
+        }
+        .play-button:hover {
+            background-color: #0056b3;
+        }
+        /* Logo styles */
+    .logo {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: 130px; /* Adjust the logo width as needed */
+      height: 130px;
+    }
+    </style>
+</head>
+<body>
+   
+    <div class="container">
+        <h1>Instructions</h1>
+        <ul>
+            <li>Before starting the game enter the number of moves you want to complete the game in.</li>
+            <li>The minimum number of moves required to flip all the cards are 8,flipping a pair of cards is considered as one move.</li>
+            <li>The game starts with all the cards face down and player takes turns to turn over two cards.</li>
+            <li>If the two cards match, then they remain intact, or else they flip back.</li> 
+            <li>The time limit for the game is 180 seconds.</li>
+            <li>The game concludes upon the successful pairing of all cards, the completion of the designated time limit, or the exhaustion of the alloted number of moves.</li>
+        </ul>
+        <button class="play-button" onclick="location.href='game1.html'">Play</button>
+
+    </div>
+</body>
+</html>

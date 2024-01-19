@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory Game - Login</title>
+  <style>
+    body {
+      background-image: url('loginpg.gif');
+      background-repeat: no-repeat;
+      background-size: 100% 140%;
+      font-family: 'Bedrock', Bedrock;
+      font-size: 30px;
+      margin-top: 100px; /* Adjust the margin-top value to move the container down */
+    }
+    
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 40px;
+      background-color: transparent;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(10, 9, 9, 0.1);
+      position: relative; /* Add this property for logo positioning */
+    }
+    
+    h1 {
+      text-align: center;
+      color: #fff;
+      font-family: 'Bedrock', Bedrock;
+      font-size: 60px;
+    }
+    
+    .form-group {
+      margin-bottom: 20px;
+    }
+    
+    .form-group label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+      color: #fff;
+      font-size: 120%;
+    }
+    
+    .form-group input[type="text"],
+    .form-group input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      
+    }
+    
+    .form-group button {
+      display: block;
+      width: 106%;
+      padding: 10px;
+      background-color: rgb(10, 11, 11);
+      color:rgb(246, 241, 241);
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    
+    .form-group button:hover {
+      background-color: lightblue;
+    }
+
+    
+  </style>
+</head>
+<body>
+ 
+  
+  <div class="container">
+    <h1>Login</h1>
+    <form onsubmit="return redirectToPage()">
+      <div class="form-group">
+        <label for="username">Name</label>
+        <input type="text" id="username" required>
+      </div>
+      <div class="form-group">
+        <label for="age">Age</label>
+        <input type="text" id="age" required>
+      </div>
+      <div class="form-group">
+        <button type="submit">Login</button>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    function redirectToPage() {
+      // Replace "your-page.html" with the actual URL or file path of the HTML page you want to open
+      var pageUrl = "home.html";
+      window.location.href = pageUrl;
+      return false; // Prevent form submission
+    }
+  </script>
+</body>
+</html>
